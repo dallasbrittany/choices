@@ -1,0 +1,76 @@
+{
+    "id": "vacation-example-story",
+    "name": "Vacation Example Story",
+    "description": "An example story about taking a vacation.",
+    "init_link_id": "before-vacation",
+    "links": [
+        {
+            "id": "before-vacation",
+            "description": "You sit down and think about what kind of vacation you'd like to go on next month.",
+            "choices": [
+                {
+                    "description": "You decide you'd like to go somewhere tropical.",
+                    "options": [
+                        {
+                            "link": "scuba-trip",
+                            "probability": "100"
+                        }
+                    ]
+                },
+                {
+                    "description": "You decide you'd like to see snow.",
+                    "options": [
+                        {
+                            "link": "ski-trip",
+                            "probability": "85"
+                        },
+                        {
+                            "link": "bad-weather-staycation",
+                            "probability": "15"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "scuba-trip",
+            "description": "You spend a week in the Caribbean scuba diving.",
+            "choices": [
+                {
+                    "description": "Time to go home.",
+                    "options": [
+                        {
+                            "link": "go-home",
+                            "probability": "100"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ski-trip",
+            "description": "You spend a week in the mountains skiing.",
+            "choices": [
+                {
+                    "description": "Time to go home.",
+                    "options": [
+                        {
+                            "link": "go-home",
+                            "probability": "100"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "bad-weather-staycation",
+            "description": "The weather is bad, so you decide on a staycation instead.",
+            "choices": []
+        },
+        {
+            "id": "go-home",
+            "description": "You return home with great photos of your trip.",
+            "choices": []
+        }
+    ]
+}
